@@ -1,7 +1,8 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 import Home from './views/Home.vue';
-import About from './views/About.vue';
+import Projects from './views/Projects.vue';
+import SingleProject from './views/SingleProject.vue';
 
 Vue.use(Router);
 
@@ -13,9 +14,16 @@ export default new Router({
       component: Home,
     },
     {
-      path: '/about',
-      name: 'about',
-      component: About,
+      path: '/projects',
+      name: 'projects',
+      component: Projects,
+      children: [
+        {
+          path: ':project',
+          name: 'project',
+          component: SingleProject,
+        }
+      ],
     },
   ],
 });
