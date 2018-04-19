@@ -1,19 +1,26 @@
 <template>
   <div class="home">
-    <img src="../assets/logo.png">
-    <h1>Marcus Rehn</h1>
-    <p>Hi everyone and welcome to marcusrehn.se</p>
+    <div class="columns is-center">
+      <div class="column is-one-third">
+        <card title="Marcus Rehn" subTitle="Developer based in Karlskrona">
+          <img src="../assets/marcus.jpg">
+        </card>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue';
+import Card from '@/components/Card';
 
 export default {
   name: 'home',
   components: {
-    HelloWorld,
+    Card,
   },
 };
 </script>
+<style scoped>
+
+</style>

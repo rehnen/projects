@@ -4,10 +4,10 @@ import App from './App.vue';
 import router from './router';
 import store from './store';
 
+import 'bulma/css/bulma.min.css'
+
 Vue.config.productionTip = false;
 Vue.use(Resource);
-Vue.http.options.root = 'https://api.github.com';
-Vue.http.headers.common.Accept = 'application/vnd.github.v3+json';
 
 new Vue({
   router,

@@ -26,7 +26,7 @@ export default {
 
   methods: {
     fetchData() {
-      this.$http.get('users/rehnen/repos')
+      this.$http.get('projects')
         .then((result) => {
           this.summaries = result.data;
         });

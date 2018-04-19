@@ -22,7 +22,7 @@ export default {
   },
   methods: {
     fetchData() {
-      this.$http.get(`repos/rehnen/${this.$route.params.project}/readme`)
+      this.$http.get(`projects/${this.$route.params.project}/`)
         .then((result) => {
           // const base64 = result.data.content;
           this.result = this.marked(atob(result.data.content));

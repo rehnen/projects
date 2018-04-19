@@ -7,6 +7,7 @@ import SingleProject from './views/SingleProject.vue';
 Vue.use(Router);
 
 export default new Router({
+  linkActiveClass: 'is-current',
   routes: [
     {
       path: '/',
