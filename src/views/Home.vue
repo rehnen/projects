@@ -1,26 +1,41 @@
 <template>
   <div class="home">
-    <div class="columns is-center">
-      <div class="column is-one-third">
-        <card title="Marcus Rehn" subTitle="Developer based in Karlskrona">
-          <img src="../assets/marcus.jpg">
-        </card>
-      </div>
-    </div>
+    <div class="top"></div>
+    <profile-pic id="profile-pic">
+      <img src="../assets/marcus.jpg" alt="">
+    </profile-pic>
+    <div class="bla"></div>
+    <c-v></c-v>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import Card from '@/components/Card';
-
+import ProfilePic from '../components/ProfilePic';
+import CV from '../components/CV';
 export default {
   name: 'home',
   components: {
-    Card,
+      ProfilePic,
+      CV,
   },
 };
 </script>
 <style scoped>
-
+.top {
+  min-height: 500px;
+  background-image: url("../assets/marcus-i-shanghai.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.bla {
+  height: 500px;
+}
+#profile-pic {
+  position: relative;
+  margin-top: -5rem;
+  margin-left: 1rem;
+}
 </style>
