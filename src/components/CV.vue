@@ -1,23 +1,28 @@
 <template>
     <div class="c-v">
-        {{ presentation }}
+        <div v-html="presentation">
+        </div>
     </div>
 </template>
 
 <script>
 import marked from 'marked';
-const file = require('../assets/presentation.md');
-console.log(file)
+import file from '../assets/presentation.md';
 export default {
     name: "c-v",
     data() {
         return {
-            presentation: "marked(file)"
+            presentation: marked(file)
         }
     }
 }
 </script>
 
-<style scoped>
-
+<style>
+    h2 {
+        font-size: 2rem;
+    }
+    p {
+        padding-bottom: 1rem;
+    }
 </style>

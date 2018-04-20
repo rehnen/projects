@@ -20,5 +20,6 @@
     border: 0.5rem solid white;
     max-width: 200px;
     max-height: 200px;
+    margin: 0;
 }
 </style>

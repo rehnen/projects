@@ -4,8 +4,7 @@
     <profile-pic id="profile-pic">
       <img src="../assets/marcus.jpg" alt="">
     </profile-pic>
-    <div class="bla"></div>
-    <c-v></c-v>
+    <c-v id="cv"></c-v>
   </div>
 </template>
 
@@ -30,12 +29,16 @@ export default {
   background-repeat: no-repeat;
   background-position: center center;
 }
-.bla {
-  height: 500px;
-}
 #profile-pic {
   position: relative;
-  margin-top: -5rem;
+  top: -5rem;
   margin-left: 1rem;
+}
+#cv {
+  width: calc(100% - 300px);
+  margin-left: 250px;
+  top: -10rem;
+  right: 0;
+  position: relative;
 }
 </style>
