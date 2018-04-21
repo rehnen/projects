@@ -34,3 +34,8 @@ export default {
   }
 };
 </script>
+<style scoped>
+.projects {
+  margin: 0 2rem;
+}
+</style>
